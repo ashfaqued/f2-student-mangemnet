@@ -12,6 +12,8 @@ function addStudent(){
         alert("Please fill in all fields");
         return;
     }   
+    studentCount++;
+
     // push in array
     students.push({
         ID: studentCount, name: studentName,  age: studentAge, grade: studentGpa, degree: studentDegree, email: studentemail
@@ -25,7 +27,7 @@ function addStudent(){
     document.getElementById("grade").value="";
     document.getElementById("email").value="";
     document.getElementById("degree").value="";
-    studentCount++;
+   // studentCount++;
     console.log(students);
     displayStudents();
 }
